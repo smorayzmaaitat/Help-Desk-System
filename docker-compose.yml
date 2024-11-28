@@ -1,0 +1,66 @@
+services:
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: laravel_app
+    working_dir: /var/www/html
+    volumes:
+      - .:/var/www/html
+    ports:
+      - "8000:8000"  
+      - "8081:8081"
+    networks:
+      - app-network
+    command: >
+      sh -c "sleep 15 &&  php artisan migrate --force && 
+             php artisan reverb:start --host=0.0.0.0 --port=8080 & 
+             php-fpm"
+    depends_on:
+      - db
+
+
+  db:
+    image: postgres:latest
+    container_name: laravel_postgres
+    environment:
+      POSTGRES_USER: rix
+      POSTGRES_PASSWORD: rix
+      POSTGRES_DB: postgres
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    networks:
+      - app-network
+
+
+  nginx:
+    build:
+      context: .
+      dockerfile: Dockerfile.nginx
+    container_name: laravel_nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - .:/var/www/html
+    networks:
+      - app-network
+    depends_on:
+      - app
+
+
+  redis:
+    image: redis:latest
+    container_name: laravel_redis
+    ports:
+      - "6379:6379"
+
+volumes:
+  postgres_data:
+
+networks:
+  app-network:
+    driver: bridge
