@@ -14,7 +14,8 @@ services:
     networks:
       - app-network
     command: >
-      sh -c "sleep 15 &&  php artisan migrate --force && 
+      sh -c "composer install --no-dev --optimize-autoloader && 
+             sleep 15 &&  php artisan migrate --force && 
              php artisan reverb:start --host=0.0.0.0 --port=8080 & 
              php-fpm"
     depends_on:

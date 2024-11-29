@@ -24,7 +24,6 @@ RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash - \
 
 COPY . .
 
-RUN composer install --no-dev --optimize-autoloader
 
 RUN npm install
 
