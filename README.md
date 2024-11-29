@@ -54,3 +54,7 @@ The Help Desk Ticketing System is designed to streamline and enhance customer su
    git clone https://github.com/username/help-desk-system.git
    cd help-desk-system
    docker-compose up --build
+   ```
+2. and open
+   ```bash
+   https://localhost:443
