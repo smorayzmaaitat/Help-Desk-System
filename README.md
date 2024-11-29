@@ -39,7 +39,7 @@ The Help Desk Ticketing System is designed to streamline and enhance customer su
 ### Technology Stack
 - **Frontend**: Vue.js, TailwindCSS, Inertia.js.
 - **Backend**: Laravel with RESTful APIs.
-- **Database**: MySQL or PostgreSQL.
+- **Database**: PostgreSQL.
 - **Deployment**: Docker, CI/CD pipelines.
 
 ## Key Screens
