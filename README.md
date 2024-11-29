@@ -41,7 +41,7 @@ The Help Desk Ticketing System is designed to streamline and enhance customer su
     - Instant performance metric updates.
 
 - **Admin Features**:
-  - **System Customization.
+  - System Customization.
     - Application name
     - Color scheme/branding
     - Global notification settings
