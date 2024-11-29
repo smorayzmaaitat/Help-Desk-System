@@ -10,9 +10,6 @@ The Help Desk Ticketing System is designed to streamline and enhance customer su
   - **Supervisors**: Monitor performance, reassign tickets, and generate reports.
   - **Admins**: Manage user roles, system configurations, and security.
   
-- **Database Structure**:
-  - Users, Tickets, Categories, Surveys, Attachments, and Ticket History tables.
-  - Supports relationships like ticket assignment and category hierarchy.
 
 ### Functionalities
 - **End User Features**:
@@ -61,8 +58,7 @@ The Help Desk Ticketing System is designed to streamline and enhance customer su
 - **Frontend**: Vue.js, TailwindCSS, Inertia.js.
 - **Backend**: Laravel with RESTful APIs.
 - **Database**: PostgreSQL.
-- **Real-Time Technologies**: WebSocket, Socket.io.
-- **Deployment**: Docker, CI/CD pipelines.
+- **Real-Time Technologies**: WebSocket .
 
 ## Key Screens
 - Login/Register
