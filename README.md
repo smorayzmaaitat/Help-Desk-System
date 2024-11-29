@@ -70,7 +70,7 @@ The Help Desk Ticketing System is designed to streamline and enhance customer su
 ## Deployment
 1. Clone the repository:
    ```bash
-   git clone https://github.com/username/help-desk-system.git
+   git clone https://github.com/smorayzmaaitat/Help-Desk-System
    cd help-desk-system
    docker-compose up --build
    ```
