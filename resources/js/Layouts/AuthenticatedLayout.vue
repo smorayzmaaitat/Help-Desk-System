@@ -134,7 +134,7 @@ export default {
             showingNavigationDropdown: false,
             notifications:  [],
             notif:  0,
-            enabel_notif: this.$page.props?.app_settings?.notifications || true,
+            enabel_notif: this.$page.props?.app_settings?.notifications ,
             messages:  [],
             unreadMessages:0
         };
