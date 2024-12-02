@@ -39,13 +39,18 @@
 
                         <!-- Notifications -->
                         <button @click="notification" class="relative group p-2">
-                            <BsBellFill :class="isDarkTheme ? 'text-gray-300' : 'text-gray-600'" size="20"/>
+                            <component 
+                                :is="enabel_notif ? 'BsBellFill' : 'BsBellSlashFill'" 
+                                :class="isDarkTheme ? 'text-gray-300' : 'text-gray-600'" 
+                                :size="21" 
+                            />
                             <span v-if="enabel_notif"
                                 class="absolute -top-1 -right-1 bg-red-500 text-white rounded-full px-2 py-0.5 text-xs">
                                 {{ notif }}
                             </span>
                         </button>
 
+                      
                         <!-- User Dropdown -->
                         <Dropdown>
                             <template #trigger>
@@ -104,10 +109,12 @@ import {
     BsGearFill,
     BsBoxArrowRight,
     BsFillTicketPerforatedFill,
+    BsBellSlashFill 
 } from 'vue-icons-plus/bs';
 
 export default {
     components: {
+        BsBellSlashFill ,
         BsKanbanFill,
         BsChatSquareTextFill,
         BsBellFill,
