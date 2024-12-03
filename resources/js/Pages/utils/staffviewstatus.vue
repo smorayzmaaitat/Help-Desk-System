@@ -47,7 +47,7 @@
                   >
                    
                     <option value="open">Open</option>
-                    <option value="in progress">In Progress</option>
+                    <option value="inprogress">In Progress</option>
                     <option value="resolved">Resolved</option>
                     <option value="closed">Closed</option>
                   </select>
