@@ -44,7 +44,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/alltickitadmin', [TicketController::class, 'viewallticketsForadmin']);
     Route::get('/edittickets/{id}', [TicketController::class, 'edit']);
     Route::post('/updteckets/{id}', [TicketController::class, 'update']);
-    Route::get('/viewtickets/{id}', [TicketController::class, 'viewtickets']);
+    Route::get('/viewtickets/{id}', [TicketController::class, 'viewtickets'])->name('viewtickets');
     Route::post('/tickets/feedback', [TicketController::class, 'feedback']);
     Route::post('/tickets/assign-staff', [TicketController::class, 'assign_staff']);
     Route::post('/tickets/staff_updateticket', [TicketController::class, 'staff_updateticket']);
