@@ -56,7 +56,7 @@ export default {
           v-model="selectedRoleLocal"
         >
           <option value="open">Open</option>
-          <option value="in progress">in progress</option>
+          <option value="inprogress">in progress</option>
           <option value="resolved">Resolved</option>
           <option value="closed">closed</option>
         </select>
