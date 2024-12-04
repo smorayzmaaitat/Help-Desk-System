@@ -16,8 +16,11 @@
               <div>Department: {{ ticket.department || 'N/A' }}</div>
               <div>
                 <div v-if="ticket.attachment">
-                  <img v-if="ticket.attachment" :src="`/storage/${ticket.attachment}`" alt="Attachment" class="max-w-[150px] max-h-[150px] rounded">
-                </div>
+                    <img v-if="ticket.attachment" :src="`/storage/${ticket.attachment}`" alt="Attachment" class="max-w-[150px] max-h-[150px] rounded">
+                    <a :href="`/storage/${ticket.attachment}`" download class="mt-2 inline-block px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
+                      Download Attachment
+                    </a>
+                  </div>
                 <div v-else>Attachment: N/A</div>
               </div>
             </div>
