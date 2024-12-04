@@ -275,7 +275,8 @@ public function viewallticketsForadmin(Request $request)
 public function deleteticket(Request $request , $id)
 {
     $user = Auth::user();
-    if ($user->role != 'admin') {
+    $tickets = Ticket::where('id', $id)->first();
+    if ($user->role != 'admin' && $user->id != $tickets->user_id) {
         abort(403, 'Unauthorized action.');
     }
     if (!Auth::check()) {
@@ -283,5 +284,6 @@ public function deleteticket(Request $request , $id)
     }
     $tickets = Ticket::where('id', $id)->delete();
 }
+
 
 }
