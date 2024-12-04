@@ -78,3 +78,15 @@ The Help Desk Ticketing System is designed to streamline and enhance customer su
    ```bash
    https://localhost:443
    ```
+
+## Try the App
+
+You can try the app by visiting the following URL:
+
+[https://16.171.165.82](https://16.171.165.82)
+
+### Login Credentials
+
+- **Email**: admin@admin.com
+- **Password**: adminadmin
+
