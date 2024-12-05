@@ -20,6 +20,7 @@ The Help Desk Ticketing System is designed to streamline and enhance customer su
     - Instant chat within ticket context.
     - Live comment updates.
     - Live chat .
+      
  
 - **Technician Features**:
   - Ticket assignment and status updates.
