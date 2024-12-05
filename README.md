@@ -10,7 +10,7 @@ The Help Desk Ticketing System is designed to streamline and enhance customer su
   - **Supervisors**: Monitor performance, reassign tickets, and generate reports.
   - **Admins**: Manage user roles, system configurations, and security.
   
-
+ 
 ### Functionalities
 - **End User Features**:
   - Intuitive ticket submission with file attachments.
