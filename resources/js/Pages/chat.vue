@@ -32,7 +32,7 @@
                   ? 'bg-blue-500 text-white'
                   : 'bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-gray-200'
               ]">
-                <p>{{ message.content }}</p>
+                <p class="break-words whitespace-pre-wrap overflow-wrap-break-word" >{{ message.content }}</p>
                 <span class="text-xs opacity-75 mt-1 block">
                   {{ formatTime(message.created_at) }}
                 </span>
