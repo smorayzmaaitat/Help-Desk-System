@@ -1,7 +1,7 @@
 # Help Desk Ticketing System
 ## Introduction
 The Help Desk Ticketing System is designed to streamline and enhance customer support by centralizing communication, improving accountability, and offering robust tracking. It helps manage inquiries, support requests, and service issues effectively.
-
+ 
 ## Features
 ### Core Components
 - **User Roles**:
