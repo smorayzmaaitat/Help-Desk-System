@@ -65,7 +65,7 @@ The Help Desk Ticketing System is designed to streamline and enhance customer su
 - Ticket Submission and Detail View
 - Admin Panels
 - Real-Time Chat Interface
-
+ 
 ## Deployment
 1. Clone the repository:
    ```bash
