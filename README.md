@@ -45,7 +45,7 @@ The Help Desk Ticketing System is designed to streamline and enhance customer su
   - **Real-Time System Monitoring**:
     - Live user activity tracking.
     - Instant system health notifications.
-
+ 
 ### Non-Functional Requirements
 - **Performance**: Handles up to 1,000 concurrent users.
 - **Security**: Encrypted communications and secure password storage.
