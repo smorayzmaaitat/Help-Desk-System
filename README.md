@@ -9,7 +9,6 @@ The Help Desk Ticketing System is designed to streamline and enhance customer su
   - **Technicians**: Manage assigned tickets, update statuses, and resolve issues.
   - **Supervisors**: Monitor performance, reassign tickets, and generate reports.
   - **Admins**: Manage user roles, system configurations, and security.
-  
  
 ### Functionalities
 - **End User Features**:
